@@ -1,0 +1,14 @@
+<div class="show_events">
+      <div class="creation_field">
+
+      <%=form_for(@event)  do |f| %>
+      <div id="date"><%= f.date_field :date, :placeholder => "Date", :class => "fields_style"%><span id=date></span></div>
+      <div id="location"><%= f.text_field :location, :placeholder => "Location", :class => "fields_style"%></div>
+      <div id="players"><%= f.number_field :players_amount, :placeholder => "Players in a team" ,:class => "fields_style"%></div>
+      <div id="price"><%= f.number_field :price, :placeholder => "Price" , :class => "fields_style"%></div>
+      <div id="info"><%= f.text_field :additional_info ,:class=>"fields_style"%></div>
+      <div id="bnt"><%= f.submit "CREATE", :class => "fields_style", :id => "btn_create" %></div>
+      <% end %>
+    </div>
+  </div>
+</div>

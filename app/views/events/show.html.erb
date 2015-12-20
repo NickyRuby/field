@@ -1,0 +1,13 @@
+<div class="show_events">
+    <div class="container">
+
+    <%= @events.each do |e| %>
+    <%= content_tag :div, class: "event_look" do %>
+    <%= content_tag(:div, e.date, class: "event_date") %>
+    <%= content_tag(:div, e.location, class:"event_location", id:"location") %>
+    <%= content_tag(:div, e.price, class: "event_price") %>
+    <% end %> %>
+
+    <% end %>
+  </div>
+</div>

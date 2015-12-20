@@ -1,0 +1,16 @@
+<div class="creation_wrapper">
+  <div class="creation_field">
+    <div class="fields_box">
+      <%=form_for(@event)  do |f| %>
+      <%= f.text_field :date, :placeholder => "Date", :class => "fields_style"%>
+      <%= f.text_field :location, :placeholder => "Location", :class => "fields_style"%>
+      <%= f.number_field :players_amount, :placeholder => "Players in a team" ,:class => "fields_style"%>
+      <%= f.number_field :price, :placeholder => "Price" , :class => "fields_style"%>
+      <%= f.submit "CREATE", :class => "btn_create", :id="" %>
+      <% end %>
+
+
+
+</div>
+</div>
+</div>

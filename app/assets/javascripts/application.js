@@ -9,6 +9,23 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
+$(document).ready(function() {
+    $('.logo').click(function(e){
+      $('.menu').slideDown(700);
+
+
+    });
+    $("body").click(function(e){
+        if(e.target.className !== "logo"){
+          $(".menu").slideUp();
+        }
+    });
+
+
+
+});
+
+
 //
 //= require jquery
 //= require jquery_ujs

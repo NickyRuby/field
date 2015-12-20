@@ -1,9 +1,18 @@
 <div class="header">
-      <div class ="logo">
-        <div class="menu">
-          <li><a title="Create Event Now" href="/events/new" id="create-icon"></a></li>
-            <li><a title="Available Events" href="/" id="active-icon"></a></li>
-            <li><a title="Finished Events"  href="#" id="finish-icon"></a></li>
-          </div>
-      </div>
+  <div class="logo">
+    <div class="menu">
+    <li>
+      <a href="/events/new" id="create-icon" title="Create Event Now"></a>
+    </li>
+    <li>
+      <a href="/" id="active-icon" title="Available Events"></a>
+    </li>
+    <li>
+      <a href="#" id="finish-icon" title="Finished Events"></a>
+    </li>
+    <li>
+      <%= link_to 'facebook', 'auth/facebook' %>
+    </li>
+  </div>
+</div>
 </div>
